@@ -1,0 +1,17 @@
+{
+    debug
+    log {
+        output stdout
+        format console
+        level DEBUG
+    }
+  }
+  
+  :80 {
+    encode gzip
+  
+    handle_path /api/* {
+        reverse_proxy nestjs-backend:5001
+    }
+  
+  }

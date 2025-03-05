@@ -1,0 +1,1007 @@
+{
+  "code": 0,
+  "message": "",
+  "total_num": 20,
+  "products": [
+    {
+      "product_id": "1729433372691370578",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8fc65429772d4afda99013a9faa5dfc7~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "SOLIDO Pizza Stone - Baking Stone | Rectangular 14\"x16\" - Perfect for Oven, BBQ and Grill",
+      "price": {
+        "min_price_format": "$39.99",
+        "min_price": "39.99",
+        "max_price_format": "",
+        "max_price": "39.99"
+      },
+      "sales": "6",
+      "status": 1,
+      "country": "US",
+      "stock": "97",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_600942",
+          "category_id": "600942"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_844168",
+          "category_id": "844168"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_935432",
+          "category_id": "935432"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "97",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729433372691436114",
+            "sku_stock": "97"
+          }
+        ]
+      },
+      "create_time": "1704895611690"
+    },
+    {
+      "product_id": "1729408875633087058",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/9b3438ca94e9409a839aa0b7ceba6322~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "TURCI LIQUID LEMON ZEST SPRAY 1.69fl oz | COLD Pressed | Natural Extract, No Artificial Color/Flavor, Non-GMO, Preservative Free, Save Time and Lemons by using In place of Lemon Zest! Fruit Beverage",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "7",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408875633152594",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698111569505"
+    },
+    {
+      "product_id": "1729408875196420690",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/c5f5919cbff0471290e4e95722ece32c~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Turci Cinnamon Spray Flavor Natural Extract 50ml - Liquid Non-GMO Preservative Free",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "2",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408875196486226",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698110982091"
+    },
+    {
+      "product_id": "1729408870569579090",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/0fcef3f126e642c39556b6ee4a26f885~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "TURCI Cold Pressed Spray Garlic - Authentic Flavor on Any Meal",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "55",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408870569644626",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698110475376"
+    },
+    {
+      "product_id": "1729408856827662930",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/ecd7db05f811473abb321cdba9b258ef~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Turci Mio Sal Liquid Sea Salt - Low Sodium, High Flavor for Health Conscious Cooking",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "111",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408856827728466",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698101577613"
+    },
+    {
+      "product_id": "1729408876422337106",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/68ee111ebd2f468ca19807c356346d51~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Turci Original Italian Truffle BBQ Sauce Spray, 140ml Net Weight, Post-Cooking Grilling Sauce & Flavor Enhancer",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "5",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408876422402642",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698114596612"
+    },
+    {
+      "product_id": "1729408881357263442",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8962550394e14a258ecc77a02e3eb230~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Turci BBQ Original-Barbeque Spray 0 Calories  Spray for Flavorful Meals (700 Sprays) - Flavor",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "3",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408881357328978",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698114040901"
+    },
+    {
+      "product_id": "1729408880763769426",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/45ba9dfa3ba547ddb8990e1e8d036be5~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "TURCI Infused Italian White Truffle Spray Flavor, Non GMO, No Preservatives, 50ml (1.69 oz), Perfect for Pasta",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "19",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408880763834962",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698113461076"
+    },
+    {
+      "product_id": "1729408878812303954",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/89beb6d2177e4634b3861a2bf79ea46d~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "TURCI Italian Rosemary Spray 50ml (1.69 oz.) - Natural Extract, Non-GMO, Preservative Free Spray for Adding Another Layer of Flavor on all your Finished Meals, No Artificial Color/Flavor",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "6",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408878812369490",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698112606476"
+    },
+    {
+      "product_id": "1729408878599311954",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/39b591bd1a2e41d6aac5d36628a247b4~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Turci Cold Pressed Chili Spray for Enhanced Flavor, Ideal for All Meals",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "2",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408878599377490",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698112115684"
+    },
+    {
+      "product_id": "1729408868972794450",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/7ab9da7775a042d2b3cf54011d45ab3f~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "TURCI ITALIAN BASIL EXTRACT SPRAY 50ml (1.69 oz.) | A Flavor-Packed Finishing Touch on Hot/Cold Dishes, Natural Extract, Non-GMO, Preservative Free, No Artificial Color/Flavor, Avoid Food Waste And Use Instead of Fresh Basil Leaves.",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "34",
+      "status": 2,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729408868972859986",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1698109643410"
+    },
+    {
+      "product_id": "1729597489308275282",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/7204a91e023344b18356fd0142004d2e~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Taza para Emprendedors",
+      "price": {
+        "min_price_format": "$8.98",
+        "min_price": "8.98",
+        "max_price_format": "",
+        "max_price": "8.98"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "999999",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_600024",
+          "category_id": "600024"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_859400",
+          "category_id": "859400"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_600042",
+          "category_id": "600042"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "999999",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729597498960351826",
+            "sku_stock": "999999"
+          }
+        ]
+      },
+      "create_time": "1724176108805"
+    },
+    {
+      "product_id": "1729595466315436626",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/67705078400b4755b33e52febf658249~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Emprendedor Camisa",
+      "price": {
+        "min_price_format": "$21.99",
+        "min_price": "21.99",
+        "max_price_format": "$33.99",
+        "max_price": "33.99"
+      },
+      "sales": "1",
+      "status": 6,
+      "country": "US",
+      "stock": "8999990",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_603014",
+          "category_id": "603014"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_834568",
+          "category_id": "834568"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_835720",
+          "category_id": "835720"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "8999990",
+        "sku_count": "9",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729595539136221778",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136287314",
+            "sku_stock": "999998"
+          },
+          {
+            "sku_id": "1729595539136352850",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136418386",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136483922",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136549458",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136680530",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136156242",
+            "sku_stock": "999999"
+          },
+          {
+            "sku_id": "1729595539136614994",
+            "sku_stock": "999999"
+          }
+        ]
+      },
+      "create_time": "1724101008336"
+    },
+    {
+      "product_id": "1729482353099510354",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/b6564782c4dc429788c60b83e280fcfe~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Viral Couple's Portrait Challenge Kit",
+      "price": {
+        "min_price_format": "$45.99",
+        "min_price": "45.99",
+        "max_price_format": "",
+        "max_price": "45.99"
+      },
+      "sales": "1",
+      "status": 6,
+      "country": "US",
+      "stock": "107",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_604206",
+          "category_id": "604206"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_951560",
+          "category_id": "951560"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_952200",
+          "category_id": "952200"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "107",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729482353331376722",
+            "sku_stock": "107"
+          }
+        ]
+      },
+      "create_time": "1716066332208"
+    },
+    {
+      "product_id": "1729479734790820434",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/5cc9371dc68a4dc68d47e1e5a793b57a~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Memorial Day - Remember & Honor T-Shirt Small - 3XL",
+      "price": {
+        "min_price_format": "$22.99",
+        "min_price": "22.99",
+        "max_price_format": "$24.99",
+        "max_price": "24.99"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_603014",
+          "category_id": "603014"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_834568",
+          "category_id": "834568"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_835720",
+          "category_id": "835720"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "18",
+        "out_of_stock_count": "18",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729479734791475794",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791541330",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791934546",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791017042",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791213650",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791410258",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791803474",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734790885970",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791737938",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791606866",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791279186",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791344722",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734792000082",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791082578",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791672402",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791869010",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734790951506",
+            "sku_stock": "0"
+          },
+          {
+            "sku_id": "1729479734791148114",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1715741269511"
+    },
+    {
+      "product_id": "1729472647644549714",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/f0b2ab8f2e2f43cb90298ad987520188~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Entrepreneur Ceramic Mug, (11oz)",
+      "price": {
+        "min_price_format": "$15.99",
+        "min_price": "15.99",
+        "max_price_format": "",
+        "max_price": "15.99"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "9999",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_600024",
+          "category_id": "600024"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_859400",
+          "category_id": "859400"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_600042",
+          "category_id": "600042"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "9999",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729472647644615250",
+            "sku_stock": "9999"
+          }
+        ]
+      },
+      "create_time": "1714682531181"
+    },
+    {
+      "product_id": "1729469671609897554",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/b8567f526bbb4765801629a32f020a66~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Wireless Car Charger for iPhone and Android Phones",
+      "price": {
+        "min_price_format": "$18.99",
+        "min_price": "18.99",
+        "max_price_format": "",
+        "max_price": "18.99"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "100",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_601739",
+          "category_id": "601739"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_909064",
+          "category_id": "909064"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_910344",
+          "category_id": "910344"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "100",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729469671589450322",
+            "sku_stock": "100"
+          }
+        ]
+      },
+      "create_time": "1713982808214"
+    },
+    {
+      "product_id": "1729445207777251922",
+      "image_url": "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/09d4ff94802248fb9f688191eb482529~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Walden Farms Caramel Syrup 12 oz Bottle (3 Pack) Sweet Syrup - Near Zero Fat, Sugar and Calorie - For Pancakes, Waffles, French Toast, Oatmeal, Lemonade, Desserts, Snacks, Appetizers and Many More",
+      "price": {
+        "min_price_format": "$24.99",
+        "min_price": "24.99",
+        "max_price_format": "",
+        "max_price": "24.99"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "0",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_920328",
+          "category_id": "920328"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "0",
+        "sku_count": "1",
+        "out_of_stock_count": "1",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729445207777317458",
+            "sku_stock": "0"
+          }
+        ]
+      },
+      "create_time": "1709313039916"
+    },
+    {
+      "product_id": "1729426006357086802",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/807d123852e64cd299e03e3345b5f5c0~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "The Original BBQ",
+      "price": {
+        "min_price_format": "$6.49",
+        "min_price": "6.49",
+        "max_price_format": "",
+        "max_price": "6.49"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "2343",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_600024",
+          "category_id": "600024"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_858760",
+          "category_id": "858760"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_862344",
+          "category_id": "862344"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "2343",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729426006357152338",
+            "sku_stock": "2343"
+          }
+        ]
+      },
+      "create_time": "1703216200423"
+    },
+    {
+      "product_id": "1729426010997756498",
+      "image_url": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/bf1ebc724277481ba0307607aa652ea8~tplv-omjb5zjo8w-resize-jpeg:800:800.jpeg?dr=10509&from=3478900499&idc=useast5&ps=933b5bde&shcp=9b759fb9&shp=cf5bcf13&t=555f072d",
+      "title": "Chili Herb Spray",
+      "price": {
+        "min_price_format": "$6.99",
+        "min_price": "6.99",
+        "max_price_format": "",
+        "max_price": "6.99"
+      },
+      "sales": "0",
+      "status": 6,
+      "country": "US",
+      "stock": "3374",
+      "category_info": [
+        {
+          "level": 1,
+          "category_starling_key": "magellan_700437",
+          "category_id": "700437"
+        },
+        {
+          "level": 2,
+          "category_starling_key": "magellan_915080",
+          "category_id": "915080"
+        },
+        {
+          "level": 3,
+          "category_starling_key": "magellan_919176",
+          "category_id": "919176"
+        }
+      ],
+      "stock_info": {
+        "spu_stock": "3374",
+        "sku_count": "1",
+        "out_of_stock_count": "0",
+        "low_stock_count": "0",
+        "sku_stock_detail": [
+          {
+            "sku_id": "1729426010997822034",
+            "sku_stock": "3374"
+          }
+        ]
+      },
+      "create_time": "1703216193980"
+    }
+  ]
+}

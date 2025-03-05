@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: nestjs-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: on-failure
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5001:5001"
+    expose:
+      - "5001"
+    volumes:
+      - ./backend:/app
+    command: ["node", "dist/main.js"]
+    networks:
+      - my_network
+
+  caddy:
+    image: caddy:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: on-failure
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./caddy_data:/data
+      - ./caddy_config:/config
+    depends_on:
+      - backend
+    networks:
+      - my_network
+
+volumes:
+  mongo-data:
+  caddy_data:
+  caddy_config:
+
+networks:
+  my_network:
+    driver: bridge

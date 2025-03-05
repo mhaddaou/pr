@@ -1,0 +1,28 @@
+{
+  "invitation_group": {
+    "name": "invvv",
+    "message": "Hello,\n\nWe are excited to work with you. Our brand, established in 1904, has a long-standing tradition of quality. As we continue to grow our network of trusted affiliates, we focus on building brand awareness and strong connection with our consumers. Our sprays are designed to enhance dishes after cooking, and we aim to ensure that every customer enjoys the full experience of our product. We are not looking for a sales type video.\n\nWould you be interested in something like this?",
+    "contacts_info": [
+      { "title": "", "field": 7, "value": "Support@turcibrand.com" },
+      { "title": "", "field": 46, "value": "", "country_code": "US#1" }
+    ],
+    "free_sample_rule": {
+      "has_free_sample": true,
+      "is_free_sample_auto_review": true
+    },
+    "end_time": "1741935599000",
+    "product_list": [
+      { "product_id": "1729433372691370578", "target_commission": 100 }
+    ],
+    "creator_id_list": [
+      {
+        "base_info": {
+          "creator_id": "",
+          "nick_name": "",
+          "creator_oec_id": "7494019156799292684"
+        }
+      }
+    ],
+    "delivery_requirements": { "content_option": 1 }
+  }
+}
