@@ -6,6 +6,7 @@ import { GetInvDto, StatusType } from './dtos/get-inv.dto';
 import * as fs from 'fs';
 import axios from 'axios';
 import { InvitationGroup } from './dtos/invitation-group.dto';
+import { FiltersDto } from './dtos/send-invitation.dto';
 interface BrowserPlugin {
   name: string;
   description: string;
@@ -14,6 +15,9 @@ interface BrowserPlugin {
   namedItem?: (name: string) => BrowserPlugin | undefined;
 }
 
+import { FilterParams } from './interfaces/filter-param.interface';
+
+import categoryData from './data/categoryData';
 @Injectable()
 export class TiktokService {
   private readonly userAgents = [
@@ -135,6 +139,30 @@ export class TiktokService {
 
   async handlIvitation(body: any, page: Page, index: number) {
     try {
+      const invitationDetails: {
+        name: string;
+        date: string;
+        message: string;
+        productIds: Array<string>;
+        autoApprove: boolean;
+        rates: Array<string>;
+      } = body['invitation']['invitationDetails'];
+      console.log(invitationDetails, 'thi sis the details');
+      const info: InvitationGroup = {
+        name: invitationDetails.name,
+        endTime: invitationDetails.date,
+        message: invitationDetails.message,
+        autoAprove: invitationDetails.autoApprove,
+        email: "Support@turcibrand.com",
+        products: invitationDetails.productIds.map((productId, index) => ({  
+          product_id: productId,  
+          target_commission: Number(invitationDetails.rates[index]) // Convert string to number  
+        }))
+      };
+      console.log('and this is info also', info);
+      // await this.createInvitationRequest()
+      return;
+
       // body.filter && (await this.filter(body.filter, page));
 
       // don't forget to handl this error if not found;
@@ -369,7 +397,29 @@ export class TiktokService {
 
       if (body['invitation']['createInvitation']) {
         console.log('create new invitation');
-        return await this.handlIvitation(body, page, 1);
+        const invitationDetails: {
+          name: string;
+          date: string;
+          message: string;
+          productIds: Array<string>;
+          autoApprove: boolean;
+          rates: Array<string>;
+        } = body['invitation']['invitationDetails'];
+
+        const info: InvitationGroup = {
+          name: invitationDetails.name,
+          endTime: invitationDetails.date,
+          message: invitationDetails.message,
+          autoAprove: invitationDetails.autoApprove,
+          email: "Support@turcibrand.com",
+          products: invitationDetails.productIds.map((productId, index) => ({  
+            product_id: productId,  
+            target_commission: Number(invitationDetails.rates[index]) 
+          }))
+        };
+        await this.createInvitationRequest(info, cookies);
+        return await this.handlWithAlreadyInvitation(body, page);
+        // return await this.handlIvitation(body, page, 1);
       } else {
         console.log('use already invitation');
         return await this.handlWithAlreadyInvitation(body, page);
@@ -853,6 +903,39 @@ export class TiktokService {
     }
   }
 
+  async sendInvitationByRequest(
+    groupId: string,
+    creatorId: string,
+    cookie: string,
+  ) {
+    try {
+      const url =
+        'https://affiliate-us.tiktok.com/api/v1/oec/affiliate/seller/invitation_group/creators_add?user_language=en&device_id=0&device_platform=web&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=en-US&browser_platform=Linux%20x86_64&browser_name=Mozilla&browser_version=5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML,%20like%20Gecko)%20Chrome%2F133.0.0.0%20Safari%2F537.36&browser_online=true&shop_region=US';
+      const headers = this.getHeaders(cookie);
+
+      const body = { group_id: groupId, creator_ids: [creatorId] };
+
+      const res = await axios.post(url, body, { headers });
+      console.log(res.data, 'response');
+
+      if (res.data.data.success_cnt === 1) {
+        console.log('invitation sent successfuly');
+        return {
+          isSuccess: true,
+          message: 'invitation sent successfuly',
+        };
+      } else {
+        console.log('invitation failed to send');
+        return {
+          isSuccess: false,
+          message: 'invitation failed to send',
+        };
+      }
+    } catch (e) {
+      Logger.error('sendInvitationByRequest says:', e.message);
+    }
+  }
+
   async extractIdsForCreateInvitation(data) {
     try {
       const ret: string[] = [];
@@ -885,7 +968,6 @@ export class TiktokService {
         };
       }
       const status = isExist.status;
-      console.log('this is the status ', isExist.status);
       switch (status) {
         case 1:
           return { isSuccess: true, message: 'the product is available' };
@@ -908,6 +990,69 @@ export class TiktokService {
     }
   }
 
+  filterParams() {
+    try {
+      const data = [
+        { string_list: ['600024', '858504'] },
+        { string_list: ['600024', '858632'] },
+        { string_list: ['600024', '858760'] },
+        { string_list: ['600024', '858888'] },
+        { string_list: ['600024', '859016'] },
+        { string_list: ['600024', '859144'] },
+        { string_list: ['600024', '859272'] },
+        { string_list: ['600024', '859400'] },
+        { string_list: ['600024', '859528'] },
+      ];
+
+      const mus = [
+        { string_list: ['601303', '601304'] },
+        { string_list: ['601303', '601310'] },
+        { string_list: ['601303', '601325'] },
+        { string_list: ['601303', '601331'] },
+        { string_list: ['601303', '601343'] },
+        { string_list: ['601303', '601348'] },
+        { string_list: ['601303', '838920'] },
+        { string_list: ['601303', '839176'] },
+      ];
+
+      const textiles = [
+        { string_list: ['600154', '808328'] },
+        { string_list: ['600154', '809992'] },
+        { string_list: ['600154', '811016'] },
+      ];
+
+      const homeSupplies = [
+        { string_list: ['600001', '851848'] },
+        { string_list: ['600001', '851976'] },
+        { string_list: ['600001', '852104'] },
+        { string_list: ['600001', '852232'] },
+        { string_list: ['600001', '852360'] },
+        { string_list: ['600001', '852488'] },
+        { string_list: ['600001', '852616'] },
+      ];
+
+      const nameCategor = [
+        { string_list: ['601152', '842248'] },
+        { string_list: ['601152', '842376'] },
+        { string_list: ['601152', '842504'] },
+        { string_list: ['601152', '842632'] },
+        { string_list: ['601152', '842760'] },
+        { string_list: ['601152', '842888'] },
+        { string_list: ['601152', '843016'] },
+        { string_list: ['601303', '601304'] },
+        { string_list: ['601303', '601310'] },
+        { string_list: ['601303', '601325'] },
+        { string_list: ['601303', '601331'] },
+        { string_list: ['601303', '601343'] },
+        { string_list: ['601303', '601348'] },
+        { string_list: ['601303', '838920'] },
+        { string_list: ['601303', '839176'] },
+      ];
+    } catch (e) {
+      Logger.error('bodyFilters says:', e.message);
+    }
+  }
+
   private convertDateToUnixTimestamp(dateString: string): number {
     const [month, day, year] = dateString.split('/').map(Number);
     const date = new Date(year, month - 1, day);
@@ -920,17 +1065,11 @@ export class TiktokService {
     cookie: string,
   ) {
     try {
-      console.log('this is the auto approve', invitationGroup.autoAprove);
-      console.log('this email', invitationGroup.email);
-      console.log('this name', invitationGroup.name);
-      console.log('this message', invitationGroup.message);
-      console.log('this product ids', invitationGroup.products);
-      const res = await this.checkProduct(
-        cookie,
-        invitationGroup.products.product_id,
-      );
-      if (!res.isSuccess) {
-        return res;
+      for (let product of invitationGroup.products) {
+        const res = await this.checkProduct(cookie, product.product_id);
+        if (!res.isSuccess) {
+          return res;
+        }
       }
 
       if (!this.isValidFutureDate(invitationGroup.endTime)) {
@@ -940,22 +1079,27 @@ export class TiktokService {
             'Create invitation failed : the selected date is not valid. Please choose a date after today.',
         };
       }
+
+      // console.log()
       const url =
         'https://affiliate-us.tiktok.com/api/v1/oec/affiliate/seller/invitation_group/create?user_language=en&app_name=i18n_ecom_alliance&device_id=0&device_platform=web&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=en-US&browser_platform=Linux%20x86_64&browser_name=Mozilla&browser_version=5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML,%20like%20Gecko)%20Chrome%2F133.0.0.0%20Safari%2F537.36&browser_online=true&shop_region=US';
-      console.log('this is the endTIme', invitationGroup.endTime);
       const time = this.convertDateToUnixTimestamp(invitationGroup.endTime);
-      console.log('this is the time', time);
       const creators = await this.getIdsForCreateInv(cookie);
       let creator = creators[0];
-      console.log('this is the creator number one', creator);
+      const productList = [];
+      invitationGroup.products.map((product) => {
+        productList.push({
+          product_id: product.product_id,
+          target_commission: product.target_commission * 100,
+        });
+      });
 
       const headers = this.getHeaders(cookie);
-      for(let i = 0;;i++){
+      for (let i = 0; ; i++) {
         const body = {
           invitation_group: {
             name: invitationGroup.name,
-            message:
-              invitationGroup.message,
+            message: invitationGroup.message,
             contacts_info: [
               { title: '', field: 7, value: invitationGroup.email },
               { title: '', field: 46, value: '', country_code: 'US#1' },
@@ -965,9 +1109,7 @@ export class TiktokService {
               is_free_sample_auto_review: invitationGroup.autoAprove,
             },
             end_time: `${time}`,
-            product_list: [
-              { product_id: invitationGroup.products.product_id , target_commission: invitationGroup.products.target_commission * 100 },
-            ],
+            product_list: productList,
             creator_id_list: [
               {
                 base_info: {
@@ -980,19 +1122,17 @@ export class TiktokService {
             delivery_requirements: { content_option: 1 },
           },
         };
-        
-        console.log('this is the response of check product', res);
-  
+
         const response = await axios.post(url, body, { headers });
-        if(response.data.data.invitation){
-          return {isSuccess: true, message: 'invitation created successfuly'}
-        }else if (response.data.data.conflict_list){
+        if (response.data.data.invitation) {
+        console.log('invitation created successfuly');
+          return { isSuccess: true, message: 'invitation created successfuly' };
+        } else if (response.data.data.conflict_list) {
           console.log('is not create the invitation');
           continue;
         }
         // return response.data;
       }
-
     } catch (e) {
       Logger.error('createInvitationRequest says:', e.message);
     }
@@ -1047,6 +1187,124 @@ export class TiktokService {
     } catch (e) {
       Logger.error('getIdsForCreateInv says:', e.message);
     }
+  }
+
+  extractInvitation(invitations: Array<any>, name: string) {
+    try {
+      const invitation = invitations.find((inv) => inv.name === name);
+      if (invitation) {
+        return {
+          isSuccess: true,
+          message: 'invitation found',
+          invitation: {
+            id: invitation.id,
+            name: invitation.name,
+            creator_cnt: invitation.creator_cnt,
+          },
+        };
+        console.log('found');
+      } else {
+        console.log('not found');
+        return { isSuccess: false, message: 'invitation not found' };
+      }
+    } catch (e) {
+      Logger.error('extractedInvitation says: ', e.message);
+    }
+  }
+
+  async findInvitation(name: string, cookie: string) {
+    try {
+      const url =
+        'https://affiliate-us.tiktok.com/api/v1/oec/affiliate/seller/invitation_group/search?user_language=en&device_id=0&device_platform=web&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=en-US&browser_platform=Linux%20x86_64&browser_name=Mozilla&browser_version=5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML,%20like%20Gecko)%20Chrome%2F133.0.0.0%20Safari%2F537.36&browser_online=true&shop_region=US';
+
+      const headers = this.getHeaders(cookie);
+      const query = name.slice(0, name.length / 2);
+      const body = {
+        search_params: { query_items: [{ type: 4, key: query }] },
+        invitation_group_status: 5,
+        selected_creator_ids: ['7494036501982578809'],
+        page_size: 40,
+        cur_page: 1,
+      };
+
+      const res = await axios.post(url, body, { headers });
+      if (res.data.data.total) {
+        return this.extractInvitation(res.data.data.invitation_list, name);
+      } else {
+        return { isSuccess: false, message: 'invitation not found' };
+      }
+    } catch (e) {
+      Logger.error('findInvitation says : ', e.message);
+    }
+  }
+
+  async getUsersByFilter(filterParams: FilterParams) {
+    try {
+    } catch (e) {
+      Logger.error('getUsersByFilter says : ', e.message);
+    }
+  }
+
+  async getFilters(filters?: FiltersDto) {
+    const filterParams: FilterParams = {};
+
+    if (filters) {
+      const { creators, followers } = filters;
+
+      if (creators && creators.categories && creators.categories.length > 0) {
+        let categoryList: { string_list: string[] }[] = [];
+        creators.categories.forEach((category) => {
+          const categoryDataArray = categoryData[category];
+          if (categoryDataArray) {
+            categoryList = [...categoryList, ...categoryDataArray];
+          }
+        });
+
+        console.log(categoryList);
+        if (categoryList.length > 0) {
+          filterParams.category_list = categoryList;
+        }
+      }
+
+      if (creators && creators.followersCount) {
+        filterParams.follower_filter = {
+          left_bound: creators.followersCount.min,
+          right_bound: creators.followersCount.max,
+        };
+        return filterParams;
+      }
+    } else {
+      console.log('no filters');
+    }
+  }
+
+  async getUsersByFilters() {
+    const body = {
+      query: '',
+      pagination: {
+        size: 12,
+        search_key: 'MMrlRLbecVX3E1o2/QFKSVLBEJ2f4U1Wzr4vH5FlAtw',
+        next_item_cursor: 24,
+        page: 2,
+      },
+      filter_params: {
+        category_list: [
+          { string_list: ['600001', '851848'] },
+          { string_list: ['600001', '851976'] },
+          { string_list: ['600001', '852104'] },
+          { string_list: ['600001', '852232'] },
+          { string_list: ['600001', '852360'] },
+          { string_list: ['600001', '852488'] },
+          { string_list: ['600001', '852616'] },
+          { string_list: ['601352', '900488'] },
+          { string_list: ['601352', '900616'] },
+          { string_list: ['601352', '900744'] },
+        ],
+        follower_filter: { left_bound: 10, right_bound: 100 },
+        managed_by_agency: 1,
+      },
+      algorithm: 1,
+    };
   }
 
   async sendRequest() {

@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { TiktokService } from './tiktok.service';
 import { InvitationGroup } from './dtos/invitation-group.dto';
+import { SendInvitationDto } from './dtos/send-invitation.dto';
 
 @Controller('tiktok')
 export class TiktokController {
@@ -33,4 +34,23 @@ export class TiktokController {
   }
 
   // @Post('createProduct'){}
+
+  
+
+  @Post('sendInv')
+  async sendINv(@Body() {groupId , creatorId , cookie } : {groupId : string, creatorId : string, cookie : string}){
+    return await this.tiktokService.sendInvitationByRequest(groupId, creatorId, cookie);
+  }
+
+  @Post('sendInvitations')
+  async sendInvitations(@Body() data : SendInvitationDto){
+    return await this.tiktokService.getFilters(data.filters);
+  }
+
+  @Post('findInvitation')
+  async findInvitation(@Body() {name, cookie} : {name : string, cookie : string}){
+    return await this.tiktokService.findInvitation(name, cookie);
+  }
+
+
 }

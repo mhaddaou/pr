@@ -39,7 +39,7 @@ export class InvitationGroup {
   // @IsArray()
   @ValidateNested({ each: true })
   @Type(() => ProductItemDto)
-  products: ProductItemDto;
+  products: ProductItemDto[];
   @IsNotEmpty()
   @IsString()
   endTime: string;
